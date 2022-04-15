@@ -1,0 +1,120 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "light raisin coleslaw",
+            "ingredients": [
+                {
+                    "name": "cabbage",
+                    "amount": 230,
+                    "unit": "grams"
+                },
+                {
+                    "name": "carrots",
+                    "amount": 20,
+                    "unit": "grams"
+                },
+                {
+                    "name": "raisins",
+                    "amount": 40,
+                    "unit": "grams"
+                },
+                {
+                    "name": "mayonnaise",
+                    "amount": 60,
+                    "unit": "grams"
+                },
+                {
+                    "name": "sugar",
+                    "amount": 40,
+                    "unit": "grams"
+                },
+                {
+                    "name": "apple cider vinegar",
+                    "amount": 80,
+                    "unit": "milliliters"
+                },
+                {
+                    "name": "salt",
+                    "amount": 3,
+                    "unit": "grams"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "pancakes",
+            "ingredients": [
+                {
+                    "name": "eggs",
+                    "amount": 2,
+                    "unit": "pieces"
+                },
+                {
+                    "name": "flour",
+                    "amount": 250,
+                    "unit": "grams"
+                },
+                {
+                    "name": "milk",
+                    "amount": 500,
+                    "unit": "milliliters"
+                },
+                {
+                    "name": "salt",
+                    "amount": 1,
+                    "unit": "pinch"
+                }
+            ]
+        }
+    ],
+    "shopping-lists": [
+        {
+            "id": 1,
+            "name": "my first list",
+            "listItems": [
+                {
+                    "name": "carrots",
+                    "amount": 20,
+                    "unit": "grams"
+                },
+                {
+                    "name": "raisins",
+                    "amount": 40,
+                    "unit": "grams"
+                },
+                {
+                    "name": "mayonnaise",
+                    "amount": 60,
+                    "unit": "grams"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "easter list",
+            "listItems": [
+                {
+                    "name": "eggs",
+                    "amount": 2,
+                    "unit": "pieces"
+                },
+                {
+                    "name": "flour",
+                    "amount": 250,
+                    "unit": "grams"
+                },
+                {
+                    "name": "milk",
+                    "amount": 500,
+                    "unit": "milliliters"
+                },
+                {
+                    "name": "salt",
+                    "amount": 1,
+                    "unit": "pinch"
+                }
+            ]
+        }
+    ]
+}
