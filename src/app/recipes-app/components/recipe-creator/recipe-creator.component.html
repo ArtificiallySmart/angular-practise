@@ -1,0 +1,48 @@
+<!-- <h1>Recipe creator</h1> -->
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-floating my-2">
+        <input type="text" class="form-control" id="name" placeholder="name" value="" name="name"
+            formControlName="name">
+        <label for="name">name</label>
+    </div>
+
+    <div class="row">
+        <div class="col">Add Multiple ingredients:</div>
+        <div class="col"><button type="button" (click)="addIngredient()" class="btn btn-primary">Add More</button></div>
+    </div>
+    <div formArrayName="ingredients">
+        <div class="row my-2" *ngFor="let ingredient of ingredients().controls; let i=index" [formGroupName]="i">
+
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="ingredient" formControlName="name">
+                    <label for="ingredient">ingredient</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-floating">
+                    <input type="number" class="form-control" placeholder="amount" formControlName="amount">
+                    <label for="amount">amount</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="unit" formControlName="unit">
+                    <label for="unit">unit</label>
+                </div>
+            </div>
+
+            <div class="col"><button (click)="removeIngredient(i)" class="btn btn-danger">Remove</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"><button type="submit" class="btn btn-primary">Submit</button></div>
+        <div class="col"><button class="btn btn-secondary">Add ingredient</button> </div>
+        <div class="col"><button class="btn btn-danger">clear</button></div>
+    </div>
+</form>
+
+{{this.productForm.value | json}}
