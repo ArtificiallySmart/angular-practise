@@ -1,0 +1,22 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading-recipe{{recipe.id}}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#flush-collapse-recipe'+recipe.id" aria-expanded="false"
+            [attr.aria-controls]="'#flush-collapse-recipe'+recipe.id">
+            {{recipe.name}}
+        </button>
+    </h2>
+    <div id="flush-collapse-recipe{{recipe.id}}" class="accordion-collapse collapse"
+        [attr.aria-labelledby]="'flush-heading-recipe'+recipe.id" data-bs-parent="#accordionFlushExample">
+
+        <div class="accordion-body">
+
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let item of recipe.ingredients"> {{item.name}}, {{item.amount}}
+                    {{item.unit}} </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>

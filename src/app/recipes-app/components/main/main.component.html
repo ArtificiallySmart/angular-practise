@@ -1,10 +1,13 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <app-shopping-lists-overview></app-shopping-lists-overview>
         </div>
         <div class="col">
-
+            <app-recipes-overview></app-recipes-overview>
+        </div>
+        <div class="col">
+            <app-recipe-creator (onAddRecipe)="addRecipe($event)"></app-recipe-creator>
         </div>
     </div>
 </div>

@@ -10,9 +10,12 @@
         [attr.aria-labelledby]="'flush-heading'+shoppingList.id" data-bs-parent="#accordionFlushExample">
 
         <div class="accordion-body">
-            <ul>
-                <li *ngFor="let item of shoppingList.listItems"> {{item.name}}, {{item.amount}} {{item.unit}} </li>
+
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let item of shoppingList.listItems"> {{item.name}}, {{item.amount}}
+                    {{item.unit}} </li>
             </ul>
+
         </div>
 
     </div>
