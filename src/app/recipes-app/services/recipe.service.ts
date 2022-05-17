@@ -22,9 +22,7 @@ export class RecipeService {
   }
 
   addRecipe(recipe: Recipe): Observable<Recipe>{
-    console.log(`service ${JSON.stringify(recipe)}`)
     return this.http.post<Recipe>(this.apiUrl, recipe);
-
   }
 
 }

@@ -1,4 +1,11 @@
-<h1>My recipes</h1>
+<div class="d-flex justify-content-between px-3">
+    <h2>test</h2>
+    <a routerLink="new">
+        <fa-icon [icon]="faPlus" class="h2"></fa-icon>
+    </a>
+</div>
+
+
 <div class="accordion accordion-flush" id="accordionFlushExample">
     <app-recipe *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../../services/recipe.service';
 import { Recipe } from '../../classes/recipe';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-recipes-overview',
@@ -9,6 +10,8 @@ import { Recipe } from '../../classes/recipe';
 })
 
 export class RecipesOverviewComponent implements OnInit {
+
+  faPlus = faPlus;
 
   constructor( private recipeServive: RecipeService) { }
 
@@ -21,4 +24,5 @@ export class RecipesOverviewComponent implements OnInit {
   getRecipes(): void {
     this.recipeServive.getRecipes().subscribe((recipes) => (this.recipes = recipes));
     }
+
 }

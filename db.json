@@ -66,6 +66,38 @@
           "unit": "pinch"
         }
       ]
+    },
+    {
+      "name": "Soepel werkende app",
+      "ingredients": [
+        {
+          "name": "Bloed",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "name": "Zweet",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "name": "Tranen",
+          "amount": 50,
+          "unit": "ml"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "a",
+      "ingredients": [
+        {
+          "name": "asd",
+          "amount": 12,
+          "unit": "sd"
+        }
+      ],
+      "id": 4
     }
   ],
   "shopping-lists": [
